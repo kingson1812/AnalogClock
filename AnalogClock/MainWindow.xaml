@@ -14,7 +14,7 @@
         Width="400">
     <Grid ksClock:Name="GridParent" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
         <Image ksClock:Name="ImageBlankClock" Source="Asset/BlankClock.png"
-               MouseDown="ImageBlankClock_MouseDown"></Image>
+               MouseLeftButtonDown="ImageBlankClock_MouseDown"></Image>
 
         <!--Clock needle 1 - second one-->
         <Canvas ksClock:Name="CanvasLongClockNeedle">
@@ -75,7 +75,7 @@
         </Canvas>
 
         <!--Clock center nut-->
-        <Canvas ksClock:Name="CanvasCenterNut" MouseDown="ImageBlankClock_MouseDown">
+        <Canvas ksClock:Name="CanvasCenterNut" MouseLeftButtonDown="ImageBlankClock_MouseDown">
             <Image ksClock:Name="ImageCenterNut"
                    Source="Asset/CenterNut.png" 
                    Width="34" Height="34" 
